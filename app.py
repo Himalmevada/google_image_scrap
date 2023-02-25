@@ -58,7 +58,7 @@ def index():
                 # send a request to the image URL and save the image
                 image_data = requests.get(image_url).content
 
-                img_dict = {"Index": index, "Image": image_data}
+                img_dict = {"Index":index,"Name":query,"Image":image_data}
 
                 image_data_mongo.append(img_dict)
 
